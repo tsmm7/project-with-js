@@ -68,6 +68,7 @@ header {
     min-height: 150px;
     background-size: cover;
     background-position: center;
+    background-image: url();
 }
 
 .highlighted {

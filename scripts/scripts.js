@@ -5,7 +5,6 @@ const titleInput = document.getElementById("titleInput")
 const descInput = document.getElementById("descInput")
 const imageUrlInput = document.getElementById("imageUrl")
 
-// Исходные три карточки
 let artworks = [
     {
         title: "Звездная ночь",
