@@ -95,7 +95,7 @@ addArtworkBtn.addEventListener("click", () => {
         return
     }
 
-    artworks.push({ title, description, image: imageUrl })
+    artworks.push({ title, description,imageUrl })
     renderGallery()
 
     // Очищаем поля ввода
