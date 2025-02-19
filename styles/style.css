@@ -61,6 +61,10 @@ header {
     margin: 10px;
 }
 
+.description{
+    font-style: italic;
+}
+
 .photo {
     background-color: #6d6460;
     color: white;
