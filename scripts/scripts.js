@@ -5,7 +5,6 @@ const titleInput = document.getElementById("titleInput")
 const descInput = document.getElementById("descInput")
 const imageUrlInput = document.getElementById("imageUrl")
 
-// Исходные три карточки
 let artworks = [
   {
     title: "Звездная ночь",
@@ -26,7 +25,7 @@ let artworks = [
   },
 ];
 
-// Функция для создания карточки
+// Функция для карточки
 function createCard(title, description, imageUrl) {
   const card = document.createElement("div")
   card.classList.add("art-card");
@@ -69,13 +68,12 @@ function createCard(title, description, imageUrl) {
   gallery.appendChild(card)
 }
 
-// Функция очистки всех карточек
+// очистка всех карточек
 function clearAllCards() {
   gallery.innerHTML = ""
   artworks = []
 }
 
-// Заполняем галерею из массива artworks при загрузке
 function renderGallery() {
   gallery.innerHTML = ""
   artworks.sort((a, b) => a.title.localeCompare(b.title))
@@ -83,7 +81,6 @@ function renderGallery() {
 }
 renderGallery()
 
-// Добавление новой карточки
 addArtworkBtn.addEventListener("click", () => {
   const title = titleInput.value.trim()
   const description = descInput.value.trim()
@@ -101,7 +98,6 @@ addArtworkBtn.addEventListener("click", () => {
   artworks.push({ title, description, image: imageUrl })
   renderGallery()
 
-  // Очищаем поля ввода
   titleInput.value = ""
   descInput.value = ""
   imageUrlInput.value = ""
