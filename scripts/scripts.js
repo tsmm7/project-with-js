@@ -68,18 +68,17 @@ function createCard(title, description, imageUrl) {
   gallery.appendChild(card)
 }
 
-// очистка всех карточек
 function clearAllCards() {
   gallery.innerHTML = ""
   artworks = []
 }
 
-function renderGallery() {
+function renderCard() {
   gallery.innerHTML = ""
   artworks.sort((a, b) => a.title.localeCompare(b.title))
   artworks.forEach((art) => createCard(art.title, art.description, art.image))
 }
-renderGallery()
+renderCard()
 
 addArtworkBtn.addEventListener("click", () => {
   const title = titleInput.value.trim()
@@ -96,7 +95,7 @@ addArtworkBtn.addEventListener("click", () => {
   }
 
   artworks.push({ title, description, image: imageUrl })
-  renderGallery()
+  renderCard()
 
   titleInput.value = ""
   descInput.value = ""
