@@ -1,10 +1,10 @@
-const gallery = document.getElementById("gallery");
-const addArtworkBtn = document.getElementById("addArtwork");
-const clearAllBtn = document.getElementById("clearAll");
-const titleInput = document.getElementById("titleInput");
-const descInput = document.getElementById("descInput");
-const imageUrlInput = document.getElementById("imageUrl");
-const template = document.getElementById("artworkTemplate");
+const gallery = document.getElementById("gallery")
+const addArtworkBtn = document.getElementById("addArtwork")
+const clearAllBtn = document.getElementById("clearAll")
+const titleInput = document.getElementById("titleInput")
+const descInput = document.getElementById("descInput")
+const imageUrlInput = document.getElementById("imageUrl")
+const template = document.getElementById("artworkTemplate")
 
 let artworks = [
   {
